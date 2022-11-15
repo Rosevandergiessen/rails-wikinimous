@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+li {
+  font-size: 30px;
+  line-height: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link-style {
+  color: rgb(250, 143, 161);
+}
+
+.link-style:hover {
+  color:rgb(196, 115, 128);
+}
+
+.article {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}

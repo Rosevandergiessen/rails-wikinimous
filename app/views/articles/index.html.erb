@@ -1,8 +1,20 @@
-<%= link_to "New article", new_article_path %>
+<nav class="navbar bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">RailsWikinimous</span>
+    <%= link_to "New article", new_article_path, html_options = {class: "text-decoration-none"}%>
+  </div>
+</nav>
 
-<ul>
+<div class="container m-5">
+  <div class="row justify-content-center">
+    <div class="col-sm-8 col-sm-offset-2">
+<ul class="list-group">
   <% @articles.each do |article| %>
-  <li><%=link_to article.title, article_path(article)%></li>
-  <p><%= article.content %></p>
+  <li class="list-group-item border border-0 "><%=link_to article.title, article_path(article), html_options = {class: "text-decoration-none  link-style"}%></li>
+  <p class="list-group-item border border-0"><%= article.content %></p>
   <% end %>
 </ul>
+
+    </div>
+  </div>
+</div>
